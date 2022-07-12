@@ -73,7 +73,7 @@ module parking_system(
  default: next_state = IDLE;
  endcase
  end
- // LEDs and output, change the period of blinking LEDs here
+ // LEDs and output
  always @(posedge clk) begin 
  case(current_state)
  IDLE: begin
